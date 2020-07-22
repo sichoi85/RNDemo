@@ -1,27 +1,4 @@
-signingConfigs {
-    debug {
-        storeFile file('debug.keystore')
-        storePassword 'android'
-        keyAlias 'androiddebugkey'
-        keyPassword 'android'
-    }
-    release {
-        storeFile file('release.keystore')
-        storePassword '35417773'
-        keyAlias '35417773'
-        keyPassword '35417773'
-    }
-}
-buildTypes {
-    debug {
-        signingConfig signingConfigs.debug
-    }
-    release {
-        signingConfig signingConfigs.release // change debug to release 
-        minifyEnabled enableProguardInReleaseBuilds
-        proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-    }
-}
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
     ext {
